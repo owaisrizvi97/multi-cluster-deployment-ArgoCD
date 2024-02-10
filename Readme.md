@@ -31,6 +31,13 @@ eksctl create cluster --name spoke-cluster-1 --region us-west-1
 eksctl create cluster --name spoke-cluster-2 --region us-west-1
 ```
 
+![5 - glgCIZo](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/75bec29b-888f-4783-b20a-128b57a5e297)
+
+
+![6 - 7mEJFoi](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/07d75605-4bb2-4818-b2ed-8769ed744cb0)
+
+
+
 ## Kubernetes context connectivity with EKS
 
 ```
@@ -49,6 +56,9 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
+![2 - TJMr7lU](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/0dbd6d74-a37a-424c-93e7-19a0622249df)
+
+
 ## Run Argo CD in HTTP Mode(Insecure)
 
 https://github.com/argoproj/argo-cd/blob/54f1572d46d8d611018f4854cf2f24a24a3ac088/docs/operator-manual/argocd-cmd-params-cm.yaml#L82
@@ -64,6 +74,8 @@ and change the type to NodePort from ClusterIP
 ```
 kubectl get svc argocd-server -n argocd
 ```
+![7 - u4xfMhn](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/ee13742e-b1d9-40b1-b51d-dbb098014d7a)
+
 
 ## Login to ArgoCD 
 
@@ -104,6 +116,15 @@ argocd cluster add devops-project@spoke-cluster-2.ap-south-1.eksctl.io --server 
 ```
 
 ## Add ArgoCD Applications & test with manual changes
+
+
+![1 - SWMymF0](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/b13e222f-3fee-4e30-8c20-a73a9a2c02e1)
+
+![3 - CXtARwQ](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/b50f2186-f12d-49cf-9ca4-eb90de43af0d)
+
+
+![4 - 27xYyuw](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/2c2065cb-b82e-44a7-b563-e8afc1f120ff)
+
 
 
 
