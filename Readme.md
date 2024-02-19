@@ -1,5 +1,8 @@
 # Multi Cluster Application Deployment using ArgoCD (Hub-spoke Model)
 
+![hub-spoke](https://github.com/owaisrizvi97/multi-cluster-deployment-ArgoCD/assets/68285890/d58aab9d-4371-418d-ab4e-bdf3d7d9502b)
+
+
 # prerequisites
 
 kubectl – A command line tool for working with Kubernetes clusters. For more information, see Installing or updating kubectl.
